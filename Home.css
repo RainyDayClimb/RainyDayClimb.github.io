@@ -183,13 +183,15 @@ transform: scale(0.5) translateY(-15px);
 
 .showcase {
   height: 100vh;
-
+  background: url(RainyDayBCKstill.png);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50%;
+  background-position: right;
   overflow: hidden;
 }
 
 .bckVID {
+  display: none;
   z-index: -200000;
 }
 
