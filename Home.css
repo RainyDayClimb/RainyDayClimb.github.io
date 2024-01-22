@@ -183,15 +183,13 @@ transform: scale(0.5) translateY(-15px);
 
 .showcase {
   height: 100vh;
-  background: url('RainyDayBCKstill.png');
-  background-repeat: none;
+
   background-size: cover;
   background-position: 50%;
   overflow: hidden;
 }
 
 .bckVID {
-  display: none;
   z-index: -200000;
 }
 
@@ -224,6 +222,7 @@ header .logo {
 
 .primary-navigation[data-visible="false"] {
   transform: translateX(100%);
+  transition: transform 350ms ease-out;
 }
 
 .mobile-nav-toggle {
