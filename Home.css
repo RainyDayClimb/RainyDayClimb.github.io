@@ -20,8 +20,7 @@
 /*----------------------------------*/
 .adAstra {
   position: absolute;
-  padding-top: 50%;
-  padding-bottom: 50%;
+  top: 30%;
   right: 50%;
   transform: translateX(50%);
   align-items: center;
@@ -29,7 +28,28 @@
   z-index: -1000;
   cursor: pointer;
   filter: drop-shadow(0px 0px 5px rgb(79, 79, 79, 0.8));
+  overflow: hidden;
 
+}
+
+/*----------------------------------*/
+/*       Style for back VID         */
+/*----------------------------------*/
+.bckVID {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .7;
+  z-index: -200000;
+
+}
+
+.mblVID {
+  display: none;
+  z-index: -200000;
 }
 
 
@@ -198,15 +218,26 @@ transform: scale(0.5) translateY(-15px);
 
 .showcase {
   height: 100vh;
-  background: url(RainyDayBCKstill.png);
+  background-image: url('RainyDayBCKstill.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: 95%;
   overflow: hidden;
 }
 
 .bckVID {
   display: none;
+  z-index: -200000;
+}
+
+.mblVID {
+  position: absolute;
+  top: 0;
+  left: 400px;
+  width: 1vh;
+  height: 1vh;
+  object-fit: contain;
+  opacity: .7;
   z-index: -200000;
 }
 
@@ -224,7 +255,7 @@ header .logo {
   inset: 0 0 0 50%;
 
   flex-direction: column;
-  padding: min(30vh, 50%) 2em;
+  padding: min(15vh, 50%) 2em;
   row-gap: 1rem;
   margin-top: 0;
 }
