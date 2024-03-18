@@ -221,7 +221,7 @@ transform: scale(0.5) translateY(-15px);
   background-image: url('RainyDayBCKstill.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 95%;
+  background-position: 100%;
   overflow: hidden;
 }
 
