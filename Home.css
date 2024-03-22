@@ -201,7 +201,7 @@ transform: scale(0.5) translateY(-15px);
 
 /*Style for different viewports*/
 
-@media (max-width: 40em)
+@media (max-width: 50em)
 {
 
 
